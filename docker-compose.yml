@@ -22,7 +22,7 @@ services:
       PMA_USER: ${PMA_USER}
       PMA_PASSWORD: ${PMA_PASSWORD}
     ports:
-      - "8081:80"
+      - "8000:80"
     depends_on:
       - db
     restart: always
