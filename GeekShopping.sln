@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{89
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{04532BE7-F720-48B5-B298-B6B1276AC10F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Geek.Shopping.Web", "Geek.Shopping.Web\Geek.Shopping.Web.csproj", "{5234B681-20AA-49BB-8ABF-B13709BAF2C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekShopping.Web", "GeekShopping.Web\GeekShopping.Web.csproj", "{5234B681-20AA-49BB-8ABF-B13709BAF2C7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekShopping.ProductAPI", "GeekShopping.ProductAPI\GeekShopping.ProductAPI.csproj", "{9BC2DB80-888B-4FDC-8F37-EB286E3CFE40}"
 EndProject
