@@ -1,7 +1,7 @@
-version: '3.1'
+version: '3.8'
 services:
   db:
-    image: mysql:8.0.29
+    image: mysql:8.0
     container_name: mysql-container
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -19,22 +19,11 @@ services:
     container_name: phpmyadmin-container
     environment:
       PMA_ARBITRARY: 1
-      PMA_HOST: mysql-container
+      PMA_HOST: db
       PMA_USER: ${PMA_USER}
       PMA_PASSWORD: ${PMA_PASSWORD}
     ports:
       - "8000:80"
     depends_on:
       - db
-    restart: always
-
-  dotnet-app:
-    build: 
-      context: .
-      dockerfile: Dockerfile
-    container_name: dotnet-container
-    volumes:
-      - ./app:/app
-    ports:
-      - "5000:80"
     restart: always
